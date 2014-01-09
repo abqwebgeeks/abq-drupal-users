@@ -9,8 +9,6 @@
 // - First we set any shared Sass variables.
 // - Next we import Compass plug-ins (Sass mixin libraries).
 // - Last we define our custom mixins for this theme.
-//
-
 
 // =============================================================================
 // Variables
@@ -92,17 +90,19 @@ $font-monospace:   $courier;
 
 //
 // Colors, etc.
-//
 
 // The amount lists, blockquotes and comments are indented.
 $indent-amount: 30px;
 
 // The height of the navigation container.
-$nav-height: 3em;
+$nav-height: 20px;
 
 // Tab styling.
 $tabs-container-bg: #fff;
 $tabs-border: #bbb;
+
+$base-blue: #00598e;
+$base-gray: #ccc;
 
 
 // =============================================================================

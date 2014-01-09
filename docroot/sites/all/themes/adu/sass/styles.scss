@@ -25,6 +25,8 @@
 /* @import "theme-B"; */
 
 @import "components/footer";
+@import "components/header";
+
 body {
   background-color: #00598e;
 }
@@ -33,31 +35,19 @@ body {
   position: relative;
 }
 
-#header {
-  background-color: rgba(255,255,255,.3);
-  border-radius: 2px;
-  padding:5px 10px;
-  margin-bottom: 4px;
-}
 
 #main {
-  background-color: #fff;
-}
-#logo {
-  margin-left: -30px;
 }
 
 #content {
+  background-color: #fff;
 }
 
-.two-sidebars #content, .sidebar-first #content {
-  padding-left: 0px;
-}
 
 #navigation {
   padding-left: 100px;
 }
 
-.region-sidebar-first {
-  padding-top: 200px;
+.sidebar {
+  background-color: $base-gray;
 }
