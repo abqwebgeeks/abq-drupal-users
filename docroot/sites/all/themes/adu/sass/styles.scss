@@ -44,18 +44,19 @@ body {
   background-color: #fff;
 }
 #logo {
-  left: -140px;
+  margin-left: -30px;
 }
 
 #content {
-  padding-left: 120px;
 }
 
 .two-sidebars #content, .sidebar-first #content {
   padding-left: 0px;
 }
 
-#navigation { padding-left: 100px;}
+#navigation {
+  padding-left: 100px;
+}
 
 .region-sidebar-first {
   padding-top: 200px;
