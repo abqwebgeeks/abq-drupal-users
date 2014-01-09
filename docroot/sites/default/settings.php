@@ -205,11 +205,10 @@ $databases = array (
   array (
     'default' => 
     array (
-      'database' => $_SERVER["DB1_NAME"],
-      'username' => $_SERVER["DB1_USER"],
-      'password' => $_SERVER["DB1_PASS"],
-      'host' => $_SERVER["DB1_HOST"],
-      'port' => $_SERVER["DB1_PORT"],
+      'database' => 'adu',
+      'username' => 'root',
+      'password' => 'stupid',
+      'host' => 'localhost',
       'driver' => 'mysql',
       'prefix' => '',
     ),

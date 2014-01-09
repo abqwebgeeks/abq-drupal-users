@@ -3,3 +3,7 @@ docroot/files
 docroot/sites/*/files
 docroot/sites/*/private
 
+
+/docroot/.idea/
+
+/docroot/sites/all/themes/adu/.sass-cache/

@@ -1,0 +1,19 @@
+#footer {
+  position: relative;
+  margin-top: 4px;
+  background-color: #fff;
+  border-radius: 2px;
+  height: 30px;
+  p { margin: 0 }
+  #block-system-powered-by {
+    position: absolute;
+    left: 10px;
+    top: 5px;
+  }
+
+  #block-block-1 {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+  }
+}
