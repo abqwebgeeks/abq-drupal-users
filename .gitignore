@@ -7,3 +7,5 @@ docroot/sites/*/private
 /docroot/.idea/
 
 /docroot/sites/all/themes/adu/.sass-cache/
+
+/.DS_Store
