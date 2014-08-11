@@ -1,11 +1,6 @@
-# Ignore paths that contain user-generated content.
 docroot/files
 docroot/sites/*/files
 docroot/sites/*/private
-
-
-/docroot/.idea/
-
+.idea
 /docroot/sites/all/themes/adu/.sass-cache/
-
 /.DS_Store
