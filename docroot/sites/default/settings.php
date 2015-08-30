@@ -207,7 +207,7 @@ $databases = array (
     array (
       'database' => 'adu',
       'username' => 'root',
-      'password' => 'stupid',
+      'password' => 'password',
       'host' => 'localhost',
       'driver' => 'mysql',
       'prefix' => '',
