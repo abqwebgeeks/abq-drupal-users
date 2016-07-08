@@ -4,5 +4,4 @@ docroot/sites/*/private
 .idea
 /docroot/sites/all/themes/adu/.sass-cache/
 /.DS_Store
-docroot/sites/default/settings.php
 *.sql.gz
