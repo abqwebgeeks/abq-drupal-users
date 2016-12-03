@@ -534,3 +534,7 @@ $conf['404_fast_html'] = '<html xmlns="http://www.w3.org/1999/xhtml"><head><titl
 if (file_exists('/var/www/site-php')) {
   require('/var/www/site-php/abqdrupal/abqdrupal-settings.inc');
 }
+
+if (file_exists('local.settings.php')) {
+  require_once('local.settings.php');
+}
