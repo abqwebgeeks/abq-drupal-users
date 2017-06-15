@@ -1,0 +1,21 @@
+uuid: 78fa6277-5e6c-408d-8435-02d0f2e95852
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_d_o_user_name
+  module:
+    - text
+    - user
+id: user.user.field_d_o_user_name
+field_name: field_d_o_user_name
+entity_type: user
+bundle: user
+label: 'D.O User Name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

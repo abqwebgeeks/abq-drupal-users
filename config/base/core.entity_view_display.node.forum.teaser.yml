@@ -1,0 +1,28 @@
+uuid: 3a3a838b-ae11-4efc-8f8f-e425cfe02eda
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.forum.body
+    - node.type.forum
+  module:
+    - text
+    - user
+id: node.forum.teaser
+targetEntityType: node
+bundle: forum
+mode: teaser
+content:
+  body:
+    label: hidden
+    weight: 11
+    type: text_summary_or_trimmed
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }
