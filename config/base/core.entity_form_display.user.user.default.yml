@@ -1,0 +1,46 @@
+uuid: a785711e-f84d-46d5-95a2-11d3978d58dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.user.user.field_d_o_user_name
+    - field.field.user.user.user_picture
+    - image.style.thumbnail
+  module:
+    - image
+    - text
+    - user
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  account:
+    weight: -10
+    region: content
+  contact:
+    weight: 5
+    region: content
+  field_d_o_user_name:
+    weight: 100
+    type: text_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  language:
+    weight: 0
+    region: content
+  timezone:
+    weight: 6
+    region: content
+  user_picture:
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    type: image_image
+    weight: 101
+    third_party_settings: {  }
+    region: content
+hidden: {  }
