@@ -1,0 +1,22 @@
+uuid: e2ceadd0-12fc-4d42-a97e-318e1db0d1f5
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - abqdrupalusers
+_core:
+  default_config_hash: iggZSiUKz4mYP1YPJ8SsUfFu79HIgOTt6IDy3Up59aM
+id: abqdrupalusers_powered
+theme: abqdrupalusers
+region: footer
+weight: -10
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

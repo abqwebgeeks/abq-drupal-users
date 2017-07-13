@@ -1,0 +1,20 @@
+uuid: 70b647b9-d147-41b1-a502-1b2a92e1d4a1
+langcode: en
+status: true
+dependencies:
+  theme:
+    - abqdrupalusers
+_core:
+  default_config_hash: ffxthelqQF8xcr4GTG4HlaNNsluiHftN0pujmQpW0bQ
+id: abqdrupalusers_local_actions
+theme: abqdrupalusers
+region: header
+weight: 20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }
