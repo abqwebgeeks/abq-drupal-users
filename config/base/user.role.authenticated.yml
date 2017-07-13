@@ -1,0 +1,16 @@
+uuid: 6ad97060-1dda-4b9b-a42e-9f40ad895f3d
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
+id: authenticated
+label: 'authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'post comments'
+  - 'skip comment approval'
+  - 'use text format filtered_html'
