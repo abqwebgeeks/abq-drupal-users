@@ -1,58 +1,46 @@
-<!-- @file Instructions for subtheming using the Sass Starterkit. -->
-<!-- @defgroup sub_theming_sass -->
-<!-- @ingroup sub_theming -->
-# Sass Starterkit
+## Getting Started
 
-Below are instructions on how to create a Bootstrap sub-theme using a Sass
-preprocessor.
+### Browser Support
+Autoprefixer & Babel is set to support:
 
-- [Prerequisites](#prerequisites)
-- [Additional Setup](#setup)
-- [Overrides](#overrides)
+* IE >= 9
+* Last 3 versions of modern browsers.
 
-## Prerequisites
-- Read the @link getting_started Getting Started @endlink and @link sub_theming Sub-theming @endlink documentation topics.
-- You must understand the basic concept of using the [Sass] CSS pre-processor.
-- You must use a **[local Sass compiler](https://www.google.com/search?q=sass+compiler)**.
-- You must use the [Bootstrap Framework Source Files] ending in the `.scss`
-  extension, not files ending in `.css`.
+These can be updated at any time within the `package.json`.
 
-## Additional Setup {#setup}
-Download and extract the **latest** 3.x.x version of
-[Bootstrap Framework Source Files] into the root of your new sub-theme. After
-it has been extracted, the directory should be renamed (if needed) so it reads
-`./THEMENAME/bootstrap`.
+### Run the following commands from the theme directory
+If you haven't yet, install nvm:
+https://github.com/creationix/nvm
 
-If for whatever reason you have an additional `bootstrap` directory wrapping the
-first `bootstrap` directory (e.g. `./THEMENAME/bootstrap/bootstrap`), remove the
-wrapping `bootstrap` directory. You will only ever need to touch these files if
-or when you upgrade your version of the [Bootstrap Framework].
+#### Use the right version of node with:
+`nvm use`
 
-{.alert.alert-warning} **WARNING:** Do not modify the files inside of
-`./THEMENAME/bootstrap` directly. Doing so may cause issues when upgrading the
-[Bootstrap Framework] in the future.
+_This command will look at your `.nvmrc` file and use the version node.js specified in it. This ensures all developers use the same version of node for consistency._
 
-## Overrides {#overrides}
-The `./THEMENAME/sass/_default-variables.scss` file is generally where you will
-spend the majority of your time providing any default variables that should be
-used by the [Bootstrap Framework] instead of its own.
+#### If that version of node isn't installed, install it with:
+`nvm install`
 
-The `./THEMENAME/sass/overrides.scss` file contains various Drupal overrides to
-properly integrate with the [Bootstrap Framework]. It may contain a few
-enhancements, feel free to edit this file as you see fit.
+#### Install npm dependencies with
+`npm install`
 
-The `./THEMENAME/scss/style.scss` file is the glue that combines:
-`_default-variables.scss`, [Bootstrap Framework Source Files] and the 
-`overrides.scss` file together. Generally, you will not need to modify this
-file unless you need to add or remove files to be imported. This is the file
-that you should compile to `./THEMENAME/css/style.css` (note the same file
-name, using a different extension of course).
+_This command looks at `package.json` and installs all the npm dependencies specified in it.  Some of the dependencies include gulp, autoprefixer, gulp-sass and others._
 
-#### See also:
-- @link theme_settings Theme Settings @endlink
-- @link templates Templates @endlink
-- @link plugins Plugin System @endlink
+#### Runs default task
+`npm run build`
 
-[Bootstrap Framework]: http://getbootstrap.com
-[Bootstrap Framework Source Files]: https://github.com/twbs/bootstrap-sass
-[Sass]: http://sass-lang.com
+_This will run whatever the default task is._
+
+#### Compiles Sass
+`npm run compile`
+
+_This will perform a one-time Sass compilation._
+
+#### Runs the watch command
+`npm run watch`
+
+_This is ideal when you are doing a lot of Sass changes and you want to make sure every time a change is saved it automatically gets compiled to CSS_
+
+#### Cleans complied directory
+`npm run clean`
+
+_This will perform a one-time deletion of all compiled files within the dist/ directory._

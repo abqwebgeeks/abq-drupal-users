@@ -1,19 +1,31 @@
-global-styling:
+# These lines define the abqdrupalusers/global library.
+global:
   css:
-    theme:
-      css/style.css: {}
+    # The SMACSS category, "base", is loaded before other categories. Drupal 8
+    # loads stylesheets based on the SMACSS ordering of:
+    # base, layout, component, state, theme
+    base:
+      dist/css/global.css: {}
 
-bootstrap-scripts:
-  js:
-    bootstrap/assets/javascripts/bootstrap/affix.js: {}
-    bootstrap/assets/javascripts/bootstrap/alert.js: {}
-    bootstrap/assets/javascripts/bootstrap/button.js: {}
-    bootstrap/assets/javascripts/bootstrap/carousel.js: {}
-    bootstrap/assets/javascripts/bootstrap/collapse.js: {}
-    bootstrap/assets/javascripts/bootstrap/dropdown.js: {}
-    bootstrap/assets/javascripts/bootstrap/modal.js: {}
-    bootstrap/assets/javascripts/bootstrap/tooltip.js: {}
-    bootstrap/assets/javascripts/bootstrap/popover.js: {}
-    bootstrap/assets/javascripts/bootstrap/scrollspy.js: {}
-    bootstrap/assets/javascripts/bootstrap/tab.js: {}
-    bootstrap/assets/javascripts/bootstrap/transition.js: {}
+
+# Example external library.
+# webfonts:
+#   version: 1.x
+#   js:
+#     https://fast.fonts.net/example.js: { type: external, attributes: { async: true }}
+
+# Attach each library by using attach_library() within the components twig template.
+# More info: https://www.drupal.org/node/2456753
+
+# Example component library.
+# site-logo:
+#   css:
+#     component:
+#       dist/css/site-logo.css: {}
+#   # If this library had JavaScript you could specify it like this:
+#   js:
+#     js/script.js: {}
+#   # If this library had dependencies on other libraries, you could specify it like this:
+#   dependencies:
+#     - abqdrupalusers/clearfix
+#     - abqdrupalusers/visually-hidden
