@@ -779,3 +779,4 @@ $config_directories['sync'] = '../config/base';
 if (file_exists(__DIR__ . '/local.settings.php')) {
   include __DIR__ . '/local.settings.php';
 }
+$settings['install_profile'] = 'standard';
